@@ -2,7 +2,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import express, { json } from "express";
 import "express-async-errors";
-//import routers  from "./routers/routers"
+import routers  from "./routers/routers"
 //import errorHandler from "./middlewares/errorHandler";
 dotenv.config();
 
