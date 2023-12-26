@@ -1,9 +1,7 @@
-import * as productsRepository from "../repositories/productRepository.js";
+import * as productsService from "../services/productService.js";
 
 export async function getCategories(req, res) { 
-    const productRepository  = await productsRepository.allCategories();
-
-    console.log(productRepository);
+    const productRepository  = await productsService.allCategories();
 
     res.status(200).send(productRepository);
 } 
