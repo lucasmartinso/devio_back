@@ -4,6 +4,8 @@ import pg from 'pg';
 dotenv.config();
 const { Pool } = pg;
 
+console.log(process.env.POSTGRES_DATABASE);
+
 const databaseConfig = {
     connectionString: process.env.DATABASE_URL,
     ssl: {

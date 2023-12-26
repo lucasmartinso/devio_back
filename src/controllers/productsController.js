@@ -1,5 +1,11 @@
+import * as productsRepository from "../repositories/productRepository.js";
+
 export async function getCategories(req, res) { 
-    res.status(200).send("OI");
+    const productRepository  = await productsRepository.allCategories();
+
+    console.log(productRepository);
+
+    res.status(200).send(productRepository);
 } 
 
 export async function getProducts(req, res) { 
